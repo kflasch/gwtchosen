@@ -80,7 +80,7 @@ public abstract class ChosenImpl {
     private static final int HORIZONTAL_OFFSET = -9000;
     private static final int VERTICAL_OFFSET = -9000;
     private static final String DEFAULT_CONTAINER_ID = "chosen_container__";
-    private static final Set<Class> INJECTED_RESOURCES = new HashSet<Class>();
+    private static final Set<Class<?>> INJECTED_RESOURCES = new HashSet<>();
     private static int idCounter;
 
     protected boolean activeField;
