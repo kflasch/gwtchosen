@@ -97,7 +97,8 @@ public class ChosenListBox extends ListBox implements HasAllChosenHandlers {
      * @param isMultipleSelect specifies if multiple selection is enabled
      */
     public ChosenListBox(boolean isMultipleSelect, ChosenOptions options) {
-        super(Document.get().createSelectElement(isMultipleSelect));
+        super(Document.get().createSelectElement());
+        setMultipleSelect(isMultipleSelect);
         this.options = options;
         if (options.getResources() == null) {
             options.setResources(GWT.<Resources>create(Resources.class));
