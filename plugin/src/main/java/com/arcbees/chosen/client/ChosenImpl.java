@@ -1147,7 +1147,11 @@ public abstract class ChosenImpl {
             option.domId = containerId + "_o_" + option.getArrayIndex();
 
             StringBuilder classes = buildOptionStyleClass(option);
-            classes.append(" ").append(css.activeResult());
+            if (classes.indexOf(getCss().activeResult()) == -1) {
+                if (!isMultiple() || !option.isSelected()) {
+                    classes.append(" ").append(getCss().activeResult());
+                }
+            }
 
             SafeStyles safeStyles = SafeStylesUtils.fromTrustedString(option.getStyle());
             if (option.getHtml() != null && !option.getHtml().trim().isEmpty()) {

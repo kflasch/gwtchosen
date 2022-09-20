@@ -78,7 +78,9 @@ public class DesktopMultipleChosenImpl extends ChosenImpl {
         StringBuilder classes = super.buildOptionStyleClass(option);
 
         if (!(option.isSelected())) {
-            classes.append(" ").append(getCss().activeResult());
+            if (classes.indexOf(getCss().activeResult()) == -1) {
+                classes.append(" ").append(getCss().activeResult());
+            }
         }
 
         return classes;
