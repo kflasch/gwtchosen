@@ -3,12 +3,6 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-<!--     <parent> -->
-<!--         <groupId>org.sonatype.oss</groupId> -->
-<!--         <artifactId>oss-parent</artifactId> -->
-<!--         <version>9</version> -->
-<!--     </parent> -->
-
     <groupId>com.arcbees</groupId>
     <artifactId>gwtchosen-project</artifactId>
     <packaging>pom</packaging>
@@ -60,11 +54,6 @@
         <developerConnection>scm:git:git@github.com:ArcBees/gwtchosen.git</developerConnection>
         <url>https://github.com/ArcBees/gwtchosen.git</url>
     </scm>
-
-    <ciManagement>
-        <system>Team City</system>
-        <url>http://teamcity.arcbees.com/project.html?projectId=GWTChosen</url>
-    </ciManagement>
 
     <properties>
         <gwt.version>2.8.2</gwt.version>
