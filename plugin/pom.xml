@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.arcbees</groupId>
         <artifactId>gwtchosen-project</artifactId>
-        <version>3.3</version>
+        <version>3.4</version>
     </parent>
 
     <artifactId>gwtchosen</artifactId>
@@ -51,13 +51,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.google.gwt</groupId>
+            <groupId>org.gwtproject</groupId>
             <artifactId>gwt-user</artifactId>
             <version>${gwt.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.google.gwt</groupId>
+            <groupId>org.gwtproject</groupId>
             <artifactId>gwt-dev</artifactId>
             <version>${gwt.version}</version>
             <scope>provided</scope>
